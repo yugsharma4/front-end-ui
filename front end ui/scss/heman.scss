@@ -1,0 +1,32 @@
+$lt-gray:#ddd;
+$background-dark:#512DAB;
+$background-light:#9575CD;
+$background-pale:#D1C4E9;
+$carousel-item-weight: 300px;
+
+
+@mixin zero-margin( $pad-up-dn, $pad-left-right ) {
+	margin: 0px auto;
+	padding: $pad-up-dn $pad-left-right;
+}
+.footer{
+	background-color:$background-pale;
+	@include zero-margin(0px, 0px);
+}
+.jumbotron{
+	@include zero-margin(70px, 30px);
+	background-color: $background-light;
+	color: floralwhite;
+}
+.navbar-dark{
+	background-color: $background-dark
+}
+.carousel{
+	background: $background-dark;
+
+	.carousel-item{
+		height: $carousel-item-height
+
+		
+	}
+}
